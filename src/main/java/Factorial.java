@@ -12,7 +12,7 @@
  */
 
 public class Factorial {
-    int argMaxValForRetInt = findArgMaxValForRetInt();
+    private int argMaxValForRetInt = findArgMaxValForRetInt();
 
     /**
      * Identifies the maximum acceptable number for input argument of factorial method which can produce
