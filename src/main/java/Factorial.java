@@ -38,7 +38,7 @@ public class Factorial {
     }
 
     private int factorialRecurse (int n) {
-        return (n == 2) ? 2 : n * factorialUsingRecursion(n-1);
+        return (n == 2) ? 2 : n * factorialRecurse(n-1);
     }
 
     /**
@@ -52,7 +52,7 @@ public class Factorial {
      *         acceptable limit, which can produce factorial result within Integer.MAX_VALUE range for
      *         the system.
      */
-    public int factorialUsingRecursion(int n) {
+    public int factorialUsingRecursion(int n) throws IllegalArgumentException {
         rangeCheckForInt(n);
 
         if (n == 0 || n == 1) {
@@ -71,7 +71,7 @@ public class Factorial {
      *         acceptable limit, which can produce factorial result within Integer.MAX_VALUE range for
      *         the system.
      */
-    public int factorial(int n) {
+    public int factorial(int n) throws IllegalArgumentException {
         rangeCheckForInt(n);
 
         if (n == 0 || n == 1) {
